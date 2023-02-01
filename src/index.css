@@ -63,7 +63,10 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#D690CF] to-[#97C5E2] font-bold font-primary hover:from-[#97C5E2] hover:to-[#D690CF];
+  }
+  .text-gradient-2 {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#D690CF] to-[#97C5E2] font-bold;
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
