@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/avatar.svg";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaDribbble } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -83,7 +83,7 @@ const Banner = () => {
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <a href="#">
-                <FaYoutube />
+                <FaInstagram />
               </a>
               <a href="#">
                 <FaGithub />
