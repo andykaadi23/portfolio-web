@@ -11,7 +11,7 @@ const services = [
     link: "Learn more",
   },
   {
-    name: "Digital Imgaing",
+    name: "Digital Imaging",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti doloremque quas facilis fugiat sint iste.",
     link: "Learn more",
@@ -32,7 +32,7 @@ const services = [
 
 const Services = () => {
   return (
-    <secrion className="section" id="services">
+    <section className="section" id="services">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div
@@ -42,7 +42,7 @@ const Services = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
-            <h2 className="h2 text-gradient-2 mb-6">What I Do.</h2>
+            <h2 className="h2 text-gradient-2 mb-6 ">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
               I'm Freelance Frontend Engineer with over 2 years of experience
             </h3>
@@ -90,7 +90,7 @@ const Services = () => {
           </motion.div>
         </div>
       </div>
-    </secrion>
+    </section>
   );
 };
 
