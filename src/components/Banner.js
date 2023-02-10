@@ -4,6 +4,7 @@ import { FaGithub, FaInstagram, FaDribbble } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -57,9 +58,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 mx-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              maiores quae distinctio nisi nesciunt eaque!. Fugit maiores quae
-              distinctio nisi nesciunt eaque!.
+              I'm interested in UI/UX Design and Frontend Development and am
+              currently exploring it. I also enjoy learning new things and am
+              able to work in groups or individually.
             </motion.p>
 
             <motion.div
@@ -69,10 +70,22 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <a
+                href="https://www.linkedin.com/in/andyka-adi-pratama/"
+                className="btn btn-lg flex justify-center items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact me
               </a>
+              <Link
+                to="work"
+                smooth={true}
+                spy={true}
+                className="text-gradient btn-link cursor-pointer"
+              >
+                My Portfolio
+              </Link>
             </motion.div>
 
             <motion.div
@@ -82,13 +95,25 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <a
+                href="https://www.instagram.com/timberdik/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaInstagram />
               </a>
-              <a href="#">
+              <a
+                href="https://github.com/andykaadi23?tab=repositories"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
-              <a href="#">
+              <a
+                href="https://dribbble.com/andykaadi"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaDribbble />
               </a>
             </motion.div>

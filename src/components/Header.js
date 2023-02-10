@@ -10,7 +10,14 @@ const Header = () => {
           <a href="#">
             <img src={Logo} alt="lgo" />
           </a>
-          <button className="btn btn-sm">Work with me</button>
+          <a
+            href="https://www.linkedin.com/in/andyka-adi-pratama/"
+            className="btn btn-sm flex justify-center items-center"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Work with me
+          </a>
         </div>
       </div>
     </header>

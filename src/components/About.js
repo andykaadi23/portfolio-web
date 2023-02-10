@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -33,9 +34,9 @@ const About = () => {
               I'm Freelance Frontend Engineer with over 2 years of experience.
             </h3>
             <p className="mb-6">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              beatae a magni blanditiis quam. Sint inventore dolore sit quaerat
-              molestiae.
+              Transform your website vision into a reality. As a Frontend
+              Engineer, I can help bring your project to life. Let's build
+              something amazing together.
             </p>
 
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -51,7 +52,7 @@ const About = () => {
 
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={20} duration={3} /> : null}+
+                  {inView ? <CountUp start={0} end={10} duration={3} /> : null}+
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projects <br />
@@ -71,10 +72,22 @@ const About = () => {
             </div>
 
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <a
+                href="https://www.linkedin.com/in/andyka-adi-pratama/"
+                className="btn btn-lg flex justify-center items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact me
               </a>
+              <Link
+                to="work"
+                smooth={true}
+                spy={true}
+                className="text-gradient btn-link cursor-pointer"
+              >
+                My Portfolio
+              </Link>
             </div>
           </motion.div>
         </div>

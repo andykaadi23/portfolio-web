@@ -7,26 +7,28 @@ const services = [
   {
     name: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti doloremque quas facilis fugiat sint iste.",
-    link: "Learn more",
+      "Discover the power of user-centered design. Explore my portfolio and see the impact great UI/UX can have on your website.",
+    link: <a href="https://dribbble.com/andykaadi">Learn more</a>,
   },
   {
     name: "Digital Imaging",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti doloremque quas facilis fugiat sint iste.",
-    link: "Learn more",
+      "Bring your imagination to life with stunning digital art. Visit my portfolio and see the possibilities of what we can create together.",
+    link: <a href="https://www.instagram.com/timberdik/">Learn more</a>,
   },
   {
     name: "Development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti doloremque quas facilis fugiat sint iste.",
-    link: "Learn more",
+      "Elevate your website experience with cutting-edge frontend development. Explore my portfolio and see the possibilities of what we can build together.",
+    link: (
+      <a href="https://github.com/andykaadi23?tab=repositories">Learn more</a>
+    ),
   },
   {
     name: "3D Design",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti doloremque quas facilis fugiat sint iste.",
-    link: "Learn more",
+      "Experience the power of three-dimensional design. Check out my portfolio.",
+    link: <a href="https://www.instagram.com/timberdik/">Learn more</a>,
   },
 ];
 
@@ -46,7 +48,16 @@ const Services = () => {
             <h3 className="h3 max-w-[455px] mb-16">
               I'm Freelance Frontend Engineer with over 2 years of experience
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <div className="flex justify-between items-center">
+              <a
+                href="https://dribbble.com/andykaadi"
+                className="btn btn-sm flex justify-center items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                See my work
+              </a>
+            </div>
           </motion.div>
 
           <motion.div
@@ -79,9 +90,7 @@ const Services = () => {
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className="text-gradient text-sm">
-                        {link}
-                      </a>
+                      <p className="text-gradient text-sm">{link}</p>
                     </div>
                   </div>
                 );

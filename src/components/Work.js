@@ -23,11 +23,20 @@ const Work = () => {
                 Work.
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                earum sint impedit possimus nisi, culpa perspiciatis dolor
-                soluta necessitatibus dicta.
+                See the latest addition to my portfolio. Visit my latest work
+                and observe the progression of my skills and techniques.
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              {/* <button className="btn btn-sm">View all projects</button> */}
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://www.instagram.com/timberdik/"
+                  className="btn btn-sm flex justify-center items-center"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View all projects
+                </a>
+              </div>
             </div>
 
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
